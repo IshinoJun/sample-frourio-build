@@ -5,9 +5,7 @@ RUN mkdir /src/server
 
 WORKDIR /src
 
-COPY package*.json ./
-COPY /server/package*.json ./server
-RUN yarn install
+COPY /server/package.json /server/yarn.lock ./server/
 RUN yarn install --cwd ./server
 
 COPY . .
