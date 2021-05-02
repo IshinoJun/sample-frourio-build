@@ -5,7 +5,8 @@ import axios from 'axios'
 
 const overrideConfig: AxiosRequestConfig = {
   headers: {
-    'Access-Control-Allow-Origin': "*"
+    'Access-Control-Allow-Origin': 'https://sample-frourio-build.herokuapp.com',
+    'Content-Type': 'application/json'
   }
 }
 
